@@ -1,36 +1,79 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# StudyLog
 
-## Getting Started
+## 概要
 
-First, run the development server:
+StudyLogは、日々の学習内容と学習時間を記録できるWebアプリです。
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+学習内容、学習時間、学習日、メモを登録し、一覧で確認できます。また、登録した学習時間の合計も表示できます。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 公開URL
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://あなたのVercelのURL.vercel.app
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## GitHub
 
-## Learn More
+https://github.com/reo-kyu/study-log
 
-To learn more about Next.js, take a look at the following resources:
+## 作成した目的
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+長期インターン応募に向けて、Webアプリ開発の基本的な流れを経験するために作成しました。
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+具体的には、画面作成、フォーム入力、データベース保存、データ取得、削除処理、GitHubでのコード管理、Vercelでのデプロイまでを一通り実装しました。
 
-## Deploy on Vercel
+## 使用技術
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Supabase
+* Vercel
+* Git / GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 主な機能
+
+* 学習記録の追加
+* 学習記録の一覧表示
+* 学習記録の削除
+* 合計学習時間の表示
+* Supabaseを使ったデータ保存
+* VercelによるWeb公開
+
+## 使い方
+
+1. 学習内容を入力する
+2. 学習時間を分単位で入力する
+3. 学習日を選択する
+4. 必要に応じてメモを入力する
+5. 「追加する」ボタンを押す
+6. 登録した内容が一覧に表示される
+
+登録した学習時間は自動で合計されます。
+
+## 工夫した点
+
+* 入力項目をシンプルにし、学習記録を続けやすい形にしました。
+* 学習時間の合計を表示し、学習量を可視化できるようにしました。
+* Supabaseと連携し、ページを更新してもデータが残るようにしました。
+* TypeScriptを使用し、データの型を意識しながら実装しました。
+* GitHubにコードを公開し、Vercelで実際に使える形にデプロイしました。
+
+## 苦労した点
+
+Supabaseとの接続では、環境変数の設定やRLSポリシーの設定が必要で、最初はローカルでは動くが公開環境では動かない可能性がありました。
+
+そのため、`.env.local` とVercel側のEnvironment Variablesの違いを確認し、公開環境でもSupabaseに接続できるように設定しました。
+
+## 今後追加したい機能
+
+* 学習記録の編集機能
+* 月別の学習時間集計
+* カテゴリ別の学習時間表示
+* グラフによる学習時間の可視化
+* ログイン機能
+* ユーザーごとの学習記録管理
+
+## 学んだこと
+
+このアプリ制作を通して、Next.jsを使った画面作成、TypeScriptによる型定義、Supabaseを使ったデータベース操作、GitHubでのコード管理、Vercelでのデプロイまでの基本的な流れを学びました。
+
+特に、ローカル環境で動くアプリをインターネット上に公開するまでの流れを経験できたことが大きな学びでした。
