@@ -9,7 +9,8 @@ StudyLogは、日々の学習内容と学習時間を記録できるWebアプリ
 
 ## 画面イメージ
 
-![StudyLogの画面](./public/screenshot.png)
+![StudyLogの画面](./public/screenshot)
+
 
 ## 公開URL
 
