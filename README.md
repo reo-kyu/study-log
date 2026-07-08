@@ -8,7 +8,7 @@ StudyLogは、日々の学習内容と学習時間を記録できるWebアプリ
 
 ## 公開URL
 
-https://あなたのVercelのURL.vercel.app
+https://study-log-gamma.vercel.app/
 
 ## GitHub
 
